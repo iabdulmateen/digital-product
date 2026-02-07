@@ -1,0 +1,115 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    display: flex;            
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;     
+    background-color: #f4f4f4; 
+}
+.card-course{
+   width: 350px;
+   background-color: white;
+   border-radius: 15px;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+   overflow: hidden;
+   font-family: 'Poppins',sans-serif;
+   transition: box-shadow 0.3s ease;
+}
+.card-course:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); 
+}
+.card-header{
+    position: relative;
+    height: 200px;
+}
+.card-header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.card-course:hover .card-header img {
+    transform: scale(1.1); 
+}
+.badge{
+    position: absolute;
+    top: 15px;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.badge-left{
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #6e6d6d;
+}
+.badge-right{
+    right: 15px;
+    background-color: #ff3131;
+    color: white;
+}
+.card-body{
+    padding: 20px;
+}
+.card-body h3{
+    font-size: 18px;
+    margin-bottom:10px;
+    color: #111;
+    transition: 0.3s ease;
+}
+.card-course:hover h3{
+    color: blue;
+}
+.card-body p{
+    margin-bottom: 10px;
+    font-size: 12px ;
+}
+.ratings{
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+.reviews{
+    color: rgb(121, 115, 115); ;
+}
+.student{
+    margin-left: 10px;
+    color: rgb(121, 115, 115);
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+.old-price{
+    text-decoration: line-through;
+    fontsize: 14px;;
+    color: #aaa;
+}
+.new-price{
+    font-size: 22px;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+.add-to-cart {
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+i{
+    margin-right: 10px;
+}
+.add-to-cart:hover{
+    background-color: blue;
+    transition: 0.5s;
+}
